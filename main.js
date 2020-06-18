@@ -3,13 +3,12 @@
 
 const parentElement = document.querySelector('.katas-list')
 const boxes = document.querySelector('main')
-//kata1
+
+//kata1 // Display the numbers from 1 to 20. (1, 2, 3, …, 19, 20)
+
 const kata1Heading = document.createElement('h3')
 parentElement.append(kata1Heading)
 kata1Heading.append('Kata 1')
-
-
-//kata1 Display the numbers from 1 to 20. (1, 2, 3, …, 19, 20)
 
 let array1 = [];
 for (let counter = 1; counter <= 20; counter += 1) {
@@ -38,11 +37,9 @@ const kata3Heading = document.createElement('h3')
 parentElement.append(kata3Heading)
 kata3Heading.append('Kata 3')
 
-
 let counter3 = 1
 while (counter3 <= 20) {
     counter3 += 2
-
     array3.push(counter3)
 }
 parentElement.append(array3)
@@ -61,7 +58,6 @@ while (counter4 <= 100) {
 
     array4.push(counter4)
 }
-
 parentElement.append(array4)
 
 //kata5 Display the square numbers from 1 up to 100. (1, 4, 9, …, 81, 100)
@@ -74,10 +70,7 @@ kata5Heading.append('Kata 5')
 let counter5 = 1
 while (counter5 <= 100) {
     const counter5IsPerfectSquare = Number.isInteger(Math.sqrt(counter5))
-
-    if (counter5IsPerfectSquare) {
-
-    }
+    if (counter5IsPerfectSquare) {}
     counter5 += 1
     array5.push(counter5)
 }
@@ -90,7 +83,6 @@ let array6 = []
 const kata6Heading = document.createElement('h3')
 parentElement.append(kata6Heading)
 kata6Heading.append('Kata 6')
-
 
 let counter6 = 20
 while (counter6 >= 1) {
@@ -108,7 +100,6 @@ const kata7Heading = document.createElement('h3')
 parentElement.append(kata7Heading)
 kata7Heading.append('Kata 7')
 
-
 let counter7 = 20
 while (counter7 >= 1) {
     counter7 -= 2
@@ -116,8 +107,8 @@ while (counter7 >= 1) {
 }
 parentElement.append(array7)
 
-//kata8 Display odd numbers from 20 to 1, counting backwards. (19, 17, 15, …, 3, 1)
 
+//kata8 Display odd numbers from 20 to 1, counting backwards. (19, 17, 15, …, 3, 1)
 
 let array8 = []
 const kata8Heading = document.createElement('h3')
@@ -127,7 +118,6 @@ kata8Heading.append('Kata 8')
 let counter8 = 19
 while (counter8 >= 1) {
     counter8 -= 1
-
     array8.push(counter8)
 }
 parentElement.append(array8)
