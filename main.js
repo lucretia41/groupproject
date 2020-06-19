@@ -200,8 +200,8 @@ parentElement.append(kata13Heading)
 kata13Heading.append('Kata 13')
 
 let array13 = [];
-for (let index = 0; index < sampleArray.length; index++) {
-    if (sampleArray[index] % 1 === 0)
+for (let index = 0; index < sampleArray.length; index += 1) {
+    if (sampleArray[index] % 2 !== 0)
         array13.push(sampleArray[index])
 
 }
@@ -217,7 +217,7 @@ kata14Heading.append('Kata 14')
 let array14 = []
 
 
-for (let index = 0; index <= sampleArray.length; index += 1) {
+for (let index = 0; index < sampleArray.length; index += 1) {
     square = sampleArray[index] * sampleArray[index];
     array14.push(square)
 }
@@ -286,3 +286,6 @@ for (let index = 0; index < 20; index++) {
     boxes.append(kata19Heading)
 
 }
+
+//kata20
+
